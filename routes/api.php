@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use \App\Constant\Endpoints;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,4 +17,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
+});
+
+Route::middleware('throttle')->group(function(){
+    Route::post(Endpoints::USER_BALANCE_POST,Endpoints::USER_BALANCE_POST_ACTION)->name('user.balance');
+    Route::post(Endpoints::USER_ADD_MONEY_POST,Endpoints::USER_ADD_MONEY_POST_ACTION)->name('user.add-money');
 });
