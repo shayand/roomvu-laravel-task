@@ -1,0 +1,355 @@
+{
+	"info": {
+		"_postman_id": "e66b61f3-7b68-4e6e-9a20-b0c7beecffc6",
+		"name": "roomvu",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getUserBalance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{roomvu_base}}get-balance",
+					"host": [
+						"{{roomvu_base}}get-balance"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getUserBalance",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "hhhh",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{roomvu_base}}user/balance",
+							"host": [
+								"{{roomvu_base}}user"
+							],
+							"path": [
+								"balance"
+							]
+						}
+					},
+					"status": "Unprocessable Content",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Mar 2023 09:11:04 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Mar 2023 09:11:04 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.17"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": \"failed\",\n    \"message\": {\n        \"user_id\": [\n            \"The user id field must be an integer.\"\n        ]\n    }\n}"
+				},
+				{
+					"name": "getUserBalance",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "15",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{roomvu_base}}user/balance",
+							"host": [
+								"{{roomvu_base}}user"
+							],
+							"path": [
+								"balance"
+							]
+						}
+					},
+					"status": "Unprocessable Content",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Mar 2023 09:13:59 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Mar 2023 09:13:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.17"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": \"failed\",\n    \"message\": \"user not found\"\n}"
+				},
+				{
+					"name": "getUserBalance",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{roomvu_base}}get-balance",
+							"host": [
+								"{{roomvu_base}}get-balance"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Mar 2023 09:26:47 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Mar 2023 09:26:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.17"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"balance\": 14\n}"
+				}
+			]
+		},
+		{
+			"name": "addMoney",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "amount",
+							"value": "-10",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{roomvu_base}}add-money",
+					"host": [
+						"{{roomvu_base}}add-money"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "addMoney",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "amount",
+									"value": "60",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{roomvu_base}}add-money",
+							"host": [
+								"{{roomvu_base}}add-money"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Mar 2023 09:40:40 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Mar 2023 09:40:40 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.17"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"reference_id\": 5\n}"
+				}
+			]
+		}
+	]
+}
